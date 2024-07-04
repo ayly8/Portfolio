@@ -1,1 +1,61 @@
+body {
+  margin: 0;
+}
 
+.ayly-title {
+  font-size: 32px;
+}
+
+.nav {
+  background-color: #FFC8DD;
+  color: #A18276;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 0 16px;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.nav a {
+  color: #A18276;
+  text-decoration: none;
+}
+
+.nav li a {
+  display: block;
+  color: #A18276;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav li a:hover {
+  background-color: #DAC6B5;
+  color: #A18276;
+}
+
+.nav li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #A18276;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav li a:hover::after {
+  width: 100%;
+  left: 0;
+}
