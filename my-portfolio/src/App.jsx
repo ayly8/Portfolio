@@ -1,8 +1,8 @@
 import NavBar from "./NavBar"
+import Footer from "./Footer"
 import Home from "./pages/Home"
 import Work from "./pages/Work"
 import Fun from "./pages/Fun"
-import About from "./pages/About"
 
 function App() {
   let component
@@ -16,9 +16,6 @@ function App() {
     case "/fun":
       component = <Fun />
       break
-    case "/about":
-      component = <About />
-      break
     default:
       component = <Home />
   }
@@ -26,6 +23,7 @@ function App() {
     <>
       <NavBar />
       {component}
+      <Footer />
     </>
   );
 }

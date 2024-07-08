@@ -2,11 +2,11 @@ body {
   margin: 0;
 }
 
-.ayly-title {
+#ayly-title {
   font-size: 32px;
 }
 
-.nav {
+#nav {
   background-color: #FFC8DD;
   color: #A18276;
   display: flex;
@@ -16,7 +16,7 @@ body {
   padding: 0 16px;
 }
 
-.nav ul {
+#nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -24,12 +24,12 @@ body {
   gap: 16px;
 }
 
-.nav a {
+#nav a {
   color: #A18276;
   text-decoration: none;
 }
 
-.nav li a {
+#nav li a {
   display: block;
   color: #A18276;
   text-align: center;
@@ -38,12 +38,12 @@ body {
   position: relative;
 }
 
-.nav li a:hover {
+#nav li a:hover {
   background-color: #DAC6B5;
   color: #A18276;
 }
 
-.nav li a::after {
+#nav li a::after {
   content: '';
   position: absolute;
   width: 0;
@@ -55,7 +55,41 @@ body {
   transition: width 0.3s ease, background-color 0.3s ease;
 }
 
-.nav li a:hover::after {
+#nav li a:hover::after {
   width: 100%;
   left: 0;
+}
+
+#foot {
+  margin: 0;
+  background-color: #FFC8DD;
+  color: #A18276;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.socials-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.socials-img {
+  transition: filter 0.3s ease;
+  filter: none;
+}
+
+.socials-img:hover {
+  filter: hue-rotate(90deg) saturate(3) sepia(1);
 }
