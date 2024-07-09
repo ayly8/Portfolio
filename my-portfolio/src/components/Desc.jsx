@@ -2,10 +2,10 @@ import PropTypes from 'prop-types'
 
 function Desc(props) {
    return (
-      <div className="desc">
-         <h3 className="desc-title">{props.title}</h3>
-         <h5 className="desc-duration">{props.duration}</h5>
-         <p className="desc-para">{props.desc}</p>
+      <div id="desc">
+         <h3 id="desc-title">{props.title}</h3>
+         <h5 id="desc-duration">{props.duration}</h5>
+         <p id="desc-para">{props.desc}</p>
       </div>
    );
 }
