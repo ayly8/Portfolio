@@ -9,15 +9,15 @@
    font-family: 'Courier New', monospace;
 }
 
-#about-me, #desc {
-   border: 1px solid #A18276;
+#about-me, .desc {
+   border: 2px solid #A18276;
    border-radius: 10px;
    box-shadow: 5px 5px 5px rgba(251,172,190, 0.5);
    background-color: rgba(241,214,184, 0.7);
    padding: 20px;
    margin: 20px;
    text-align: center;
-   width: 1000px;
+   /* width: 1000px */
    display: inline-block;
    display: flex;
    flex-direction: column;
@@ -25,7 +25,7 @@
    align-items: center;
 }
 
-#about-me-para, #desc-title, #desc-duration, #desc-para {
+#about-me-para, .desc-title, .desc-duration, .desc-para {
    font-family: Verdana;
 }
 
