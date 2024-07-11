@@ -16,10 +16,4 @@ Desc.propTypes= {
    desc: PropTypes.string.isRequired,
 }
 
-// Desc.defaultProps= {
-//    title: "Example Title",
-//    duration: "Example Duration",
-//    desc: "Example Description",
-// }
-
 export default Desc

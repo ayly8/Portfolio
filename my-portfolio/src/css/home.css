@@ -3,6 +3,7 @@
    flex-direction: column;
    align-items: center;
    text-align: center;
+   width: 100%;
 }
 
 .section-title {
@@ -17,7 +18,7 @@
    padding: 20px;
    margin: 20px;
    text-align: center;
-   /* width: 1000px */
+   width: 70vw;
    display: inline-block;
    display: flex;
    flex-direction: column;
@@ -29,14 +30,23 @@
    font-family: Verdana;
 }
 
+#about-me-para {
+   text-align: justify;
+}
+
 #work-exp,  #extra-exp {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+#pic-and-desc {
+   gap: 32px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 }
 
-#pic-and-desc {
-   display: flex;
-   gap: 32px;
-}
