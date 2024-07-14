@@ -36,6 +36,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 
 #nav li a:hover {
@@ -90,5 +91,5 @@ body {
 }
 
 .socials-img:hover {
-  filter: hue-rotate(90deg) saturate(3) sepia(1);
+  filter: hue-rotate(18deg) saturate(1) sepia(1);
 }

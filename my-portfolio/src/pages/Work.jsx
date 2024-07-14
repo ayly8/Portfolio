@@ -1,7 +1,12 @@
 import Project from "../components/Project"
+import SeeMore from "../components/SeeMore"
 import '../css/work.css'
 
 function Work() {
+   const navigateTo = (path) => () => {
+      window.location.href = path;
+   };
+
    return (
       <>
          <div id="everything">
@@ -59,6 +64,12 @@ function Work() {
                   fulldesc=""
                />
             </div>
+            <SeeMore 
+               first_location={navigateTo('/home')}
+               first_option_name="Home"
+               second_location={navigateTo('/fun')}
+               second_option_name="Fun"/>
+            <br></br>
          </div>
       </>
    );

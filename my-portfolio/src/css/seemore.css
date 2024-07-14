@@ -1,0 +1,38 @@
+.section-title {
+   font-family: 'Courier New', monospace;
+}
+
+.see-more {
+   display: flex;
+}
+
+.see-more-options {
+   background-color: rgba(241,214,184, 0.7);
+   color: #A18276;
+   font-family: Verdana;
+   font-size: 32;
+   text-align: center;
+   width: 100px;
+   padding: 20px;
+   margin: 10px;
+   cursor: pointer;
+}
+
+.see-more-options:hover {
+   background-color: #A18276;
+   color: white;
+}
+
+.see-more-options::after {
+   content: '';
+   width: 0;
+   height: 2px;
+   display: block;
+   background: white;
+   transition: width 0.3s ease, background-color 0.3s ease;
+ }
+ 
+.see-more-options:hover::after {
+   width: 100%;
+ }
+

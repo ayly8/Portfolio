@@ -1,12 +1,17 @@
 import Description from "../components/Desc"
+import SeeMore from "../components/SeeMore"
 import '../css/home.css'
 
 function Home() {
+   const navigateTo = (path) => () => {
+      window.location.href = path;
+   };
+
    return (
       <>
          <div id="everything">
+            <h1 className="section-title">₊⋆ ☾⋆⁺₊⋆ About Me ⋆⁺₊⋆ ☾⋆⁺</h1>
             <div id="about-me">
-               <h1 className="section-title">₊⋆ ☾⋆⁺₊⋆ About Me ⋆⁺₊⋆ ☾⋆⁺</h1>
                <div id="pic-and-desc">
                   <img 
                      id="about-me-pic"
@@ -23,7 +28,7 @@ function Home() {
                </div>
             </div>
             <div id="work-exp">
-               <h1 className="section-title">✧･ﾟ: *✧･ﾟ:* Work Experience *:･ﾟ✧*:･ﾟ✧</h1>
+               <h1 className="section-title">: *✧･ﾟ:* Work Experience *:･ﾟ✧*:</h1>
                <Description 
                   title="Research Experience for Undergrads (REU)"
                   duration="June - August 2023"
@@ -44,6 +49,12 @@ function Home() {
                   duration="May 2023 - May 2024"
                   desc=""/>
             </div>
+            <SeeMore 
+               first_location={navigateTo('/work')}
+               first_option_name="Work"
+               second_location={navigateTo('/fun')}
+               second_option_name="Fun"/>
+            <br></br>
          </div>
       </> 
    );
