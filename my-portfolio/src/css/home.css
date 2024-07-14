@@ -51,12 +51,14 @@
 #connect {
    display: flex;
    flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 
 .connect-options {
    background-color: #A18276;
    color: white;
-   border: 1px solid black;
+   border: 1px solid #A18276;
    font-family: Verdana;
    font-size: 24;
    text-align: center;

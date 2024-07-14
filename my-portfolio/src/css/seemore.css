@@ -4,6 +4,9 @@
 
 .see-more {
    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 
 .see-more-options {

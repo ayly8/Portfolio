@@ -7,6 +7,10 @@ function Home() {
       window.location.href = path;
    };
 
+   const openInNewTab = (url) => () => {
+      window.open(url, '_blank', 'noopener,noreferrer');
+   };
+
    return (
       <>
          <div id="everything">
@@ -26,20 +30,25 @@ function Home() {
                   </p>
                </div>
                <div id="connect">
-                  <div className="connect-options" onClick="">
+                  <div 
+                     className="connect-options" 
+                     onClick={openInNewTab('https://docs.google.com/document/d/1sOQ6vM8wcC0NNTz2ZSJfEKxyDb9MASPyLu3Si5iHMpg/edit?usp=sharing')}>
                      <h3>Resume</h3>
                   </div>
-                  <div className="connect-options" onClick="">
+                  <div 
+                     className="connect-options"
+                     onClick={() => {window.location.href = 'mailto:allison@example.com';}}>
                      <h3>Email</h3>
-                     {/* <h4>allison.y.ly@gmail.com</h4> */}
                   </div>
-                  <div className="connect-options" onClick="">
+                  <div 
+                     className="connect-options"
+                     onClick={openInNewTab('https://www.linkedin.com/in/allison-y-ly/')}>
                      <h3>Linkedin</h3>
-                     {/* <h4>@allison-y-ly</h4> */}
                   </div>
-                  <div className="connect-options" onClick="">
+                  <div
+                     className="connect-options"
+                     onClick={openInNewTab('https://github.com/ayly8')}>
                      <h3>Github</h3>
-                     {/* <h4>@ayly8</h4> */}
                   </div>
                </div>
             </div>

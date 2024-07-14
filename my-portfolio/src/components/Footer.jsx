@@ -2,6 +2,16 @@ function Footer() {
    return (
       <footer id="foot">
          <div id="socials">
+            <a href="https://docs.google.com/document/d/1sOQ6vM8wcC0NNTz2ZSJfEKxyDb9MASPyLu3Si5iHMpg/edit?usp=sharing" target="_blank">
+               <img
+                  className="socials-img"
+                  src="./src/assets/user.png"
+                  alt="resume icon"
+                  width="30px"
+                  height="30px"
+                  loading="lazy">
+               </img>
+            </a>
             <a href="mailto: allison.y.ly@gmail.com">
                <img
                   className="socials-img"

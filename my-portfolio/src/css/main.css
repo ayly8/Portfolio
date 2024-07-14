@@ -32,6 +32,7 @@ body {
 #nav li a {
   display: block;
   color: #A18276;
+  font-size: 24px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
