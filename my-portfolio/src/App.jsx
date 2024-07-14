@@ -1,5 +1,5 @@
-import NavBar from "./NavBar"
-import Footer from "./Footer"
+import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import Work from "./pages/Work"
 import Fun from "./pages/Fun"

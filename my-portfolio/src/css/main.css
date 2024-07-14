@@ -39,10 +39,10 @@ body {
   cursor: pointer;
 }
 
-#nav li a:hover {
+/* #nav li a:hover {
   background-color: #DAC6B5;
   color: #A18276;
-}
+} */
 
 #nav li a::after {
   content: '';

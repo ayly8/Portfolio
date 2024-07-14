@@ -1,0 +1,19 @@
+.desc {
+   border: 2px solid #A18276;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px rgba(251,172,190, 0.5);
+   background-color: rgba(241,214,184, 0.7);
+   padding: 20px;
+   margin: 20px;
+   text-align: center;
+   width: 70vw;
+   display: inline-block;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.desc-title, .desc-duration, .desc-para {
+   font-family: Verdana;
+}

@@ -10,7 +10,7 @@
    font-family: 'Courier New', monospace;
 }
 
-#about-me, .desc {
+#about-me {
    border: 2px solid #A18276;
    border-radius: 10px;
    box-shadow: 5px 5px 5px rgba(251,172,190, 0.5);
@@ -24,17 +24,15 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-}
-
-#about-me-para, .desc-title, .desc-duration, .desc-para {
-   font-family: Verdana;
+   flex: 1;
 }
 
 #about-me-para {
+   font-family: Verdana;
    text-align: justify;
 }
 
-#work-exp,  #extra-exp {
+#work-exp, #extra-exp {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -50,3 +48,40 @@
    align-items: center;
 }
 
+#connect {
+   display: flex;
+   flex-direction: row;
+}
+
+.connect-options {
+   background-color: #A18276;
+   color: white;
+   border: 1px solid black;
+   font-family: Verdana;
+   font-size: 24;
+   text-align: center;
+   width: 100px;
+   padding: 20px;
+   margin: 20px;
+   cursor: pointer;
+}
+
+.connect-options:hover {
+   background-color: #DAC6B5;
+   /* background-color: rgba(251,172,190, 0.5); */
+   color: #A18276;
+   border: 1px solid #A18276;
+}
+
+.connect-options::after {
+   content: '';
+   width: 0;
+   height: 2px;
+   display: block;
+   background: #A18276;
+   transition: width 0.3s ease, background-color 0.3s ease;
+ }
+ 
+.connect-options:hover::after {
+   width: 100%;
+ }

@@ -22,9 +22,25 @@ function Home() {
                      loading="lazy">
                   </img>
                   <p id="about-me-para">
-                     
+                     Hi my name is Allison Ly, and welcome to my portfolio website!
                   </p>
-                  <button id="resume-btn">Resume</button>
+               </div>
+               <div id="connect">
+                  <div className="connect-options" onClick="">
+                     <h3>Resume</h3>
+                  </div>
+                  <div className="connect-options" onClick="">
+                     <h3>Email</h3>
+                     {/* <h4>allison.y.ly@gmail.com</h4> */}
+                  </div>
+                  <div className="connect-options" onClick="">
+                     <h3>Linkedin</h3>
+                     {/* <h4>@allison-y-ly</h4> */}
+                  </div>
+                  <div className="connect-options" onClick="">
+                     <h3>Github</h3>
+                     {/* <h4>@ayly8</h4> */}
+                  </div>
                </div>
             </div>
             <div id="work-exp">

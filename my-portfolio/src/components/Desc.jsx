@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import '../css/desc.css'
 
 function Desc(props) {
    return (
