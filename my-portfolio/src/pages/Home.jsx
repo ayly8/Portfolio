@@ -1,6 +1,7 @@
 import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
 import '../css/home.css'
+import ally from '../assets/Allison_Ly.JPG'
 
 function Home() {
    const navigateTo = (path) => () => {
@@ -19,12 +20,11 @@ function Home() {
                <div id="pic-and-desc">
                   <img 
                      id="about-me-pic"
-                     src="./src/assets/Allison_Ly.JPG"
+                     src={ally}
                      alt="picture of Allison Ly"
                      width="300px"
                      height="400px"
-                     loading="lazy">
-                  </img>
+                     loading="lazy"/>
                   <p id="about-me-para">
                      Hi my name is Allison Ly, and welcome to my portfolio website!
                   </p>
