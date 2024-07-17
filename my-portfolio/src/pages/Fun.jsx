@@ -9,9 +9,9 @@ function Fun() {
       <>
          <h1>Fun Test</h1>
          <SeeMore 
-               first_location={navigateTo('/home')}
+               first_location="/"
                first_option_name="Home"
-               second_location={navigateTo('/work')}
+               second_location="/work"
                second_option_name="Work"/>
             <br></br>
       </>

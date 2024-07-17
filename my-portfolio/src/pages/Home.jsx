@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
 import '../css/home.css'
@@ -75,9 +76,9 @@ function Home() {
                   desc=""/>
             </div>
             <SeeMore 
-               first_location={navigateTo('/work')}
+               first_location="/work"
                first_option_name="Work"
-               second_location={navigateTo('/fun')}
+               second_location="/fun"
                second_option_name="Fun"/>
             <br></br>
          </div>

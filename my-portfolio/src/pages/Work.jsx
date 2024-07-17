@@ -65,9 +65,9 @@ function Work() {
                />
             </div>
             <SeeMore 
-               first_location={navigateTo('/home')}
+               first_location="/"
                first_option_name="Home"
-               second_location={navigateTo('/fun')}
+               second_location="/fun"
                second_option_name="Fun"/>
             <br></br>
          </div>
