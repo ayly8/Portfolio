@@ -1,14 +1,9 @@
-import { Link } from "react-router-dom"
 import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
 import '../css/home.css'
 import ally from '../assets/Allison_Ly.JPG'
 
 function Home() {
-   const navigateTo = (path) => () => {
-      window.location.href = path;
-   };
-
    const openInNewTab = (url) => () => {
       window.open(url, '_blank', 'noopener,noreferrer');
    };
