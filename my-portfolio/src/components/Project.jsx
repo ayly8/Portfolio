@@ -1,7 +1,14 @@
+import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import '../css/project.css'
 
 function Project(props) {
+   const [descVisible, setDescVisible] = useState(false);
+
+   const toggleDescription = () => {
+      setDescVisible(!descVisible);
+   };
+
    const openInNewTab = (url) => () => {
       window.open(url, '_blank', 'noopener,noreferrer');
    };
@@ -9,21 +16,21 @@ function Project(props) {
    return (
       <div className="proj">
          <h3 className="proj-title">{props.title}</h3>
-         <img className="proj-img" src={props.img} alt={props.imgdesc}></img>
-         <h4 className="brief-desc">{props.briefdesc}</h4>
+         <img className="proj-img" src={props.img} alt={props.imgDesc}></img>
+         <h4 className="brief-desc">{props.briefDesc}</h4>
          <div className="links">
-            <div 
-               className="github-link"
-               onClick={openInNewTab(props.githublink)}>
-               <h4>Github</h4>
-            </div>
-            <div 
-               className="desc-div"
-               onClick={openInNewTab(props.githublink)}>
-               <h4>Description</h4>
-            </div>
+            <button
+               className="link-btn"
+               onClick={openInNewTab(props.link)}>
+               {props.linkName}
+            </button>
+            <button 
+               className="desc-btn"
+               onClick={toggleDescription}>
+               Description
+            </button>
          </div>
-         <p className="proj-full-desc">{props.fulldesc}</p>
+         <p className={`proj-full-desc ${descVisible ? "visible" : "hidden"}`}>{props.fullDesc}</p>
       </div>
    );
 }
@@ -31,10 +38,11 @@ function Project(props) {
 Project.propTypes= {
    title: PropTypes.string.isRequired,
    img: PropTypes.string.isRequired,
-   imgdesc: PropTypes.string.isRequired,
-   briefdesc: PropTypes.string.isRequired,
-   githublink: PropTypes.string.isRequired,
-   fulldesc: PropTypes.string.isRequired,
+   imgDesc: PropTypes.string.isRequired,
+   briefDesc: PropTypes.string.isRequired,
+   link: PropTypes.string.isRequired,
+   linkName: PropTypes.string.isRequired,
+   fullDesc: PropTypes.string.isRequired,
 }
 
 export default Project

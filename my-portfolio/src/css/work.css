@@ -5,6 +5,10 @@
    text-align: center;
 }
 
+.section-title {
+   font-family: 'Courier New', monospace;
+}
+
 .proj-section {
    display: flex;
    gap: 32px;

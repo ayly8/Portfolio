@@ -6,58 +6,86 @@ function Work() {
    return (
       <>
          <div id="everything">
+            <h1 className="section-title">.｡*ﾟ+.*. Projects +..｡*ﾟ+</h1>
             <div className="proj-section">
                <Project 
                   title="Portfolio Website"
                   img=""
-                  imgdesc=""
-                  briefdesc="Fullstack Web Application"
-                  githublink=""
-                  fulldesc=""
+                  imgDesc=""
+                  briefDesc="Fullstack Web Application"
+                  link=""
+                  linkName="Github"
+                  fullDesc="test"
                />
                <Project 
                   title="Restaurant Delivery System"
                   img=""
                   imgdesc=""
-                  briefdesc="Java Desktop Application"
-                  githublink=""
-                  fulldesc=""
+                  briefDesc="Java Desktop Application"
+                  link=""
+                  linkName="Github"
+                  fullDesc=""
                />
             </div>
             <div className="proj-section">
                <Project 
                   title="Planning Pal"
                   img=""
-                  imgdesc=""
-                  briefdesc="Fullstack Web Application"
-                  githublink=""
-                  fulldesc=""
+                  imgDesc=""
+                  briefDesc="Fullstack Web Application"
+                  link=""
+                  linkName="Github"
+                  fullDesc=""
                />
                <Project 
                   title="NomNomMap"
                   img=""
-                  imgdesc=""
-                  briefdesc="Android Mobile Application"
-                  githublink=""
-                  fulldesc=""
+                  imgDesc=""
+                  briefDesc="Android Mobile Application"
+                  link=""
+                  linkName="Github"
+                  fullDesc=""
                />
             </div>
             <div className="proj-section">
                <Project 
                   title="ChatGPT Senior Project"
                   img=""
-                  imgdesc=""
-                  briefdesc="Data Analysis"
-                  githublink=""
-                  fulldesc=""
+                  imgDesc=""
+                  briefDesc="Data Analysis"
+                  link=""
+                  linkName="Github"
+                  fullDesc=""
                />
                <Project 
                   title="Slime Hop"
                   img=""
-                  imgdesc=""
-                  briefdesc="2D Godot Puzzle Platform Game"
-                  githublink=""
-                  fulldesc=""
+                  imgDesc=""
+                  briefDesc="2D Godot Puzzle Platform Game"
+                  link=""
+                  linkName="Github"
+                  fullDesc=""
+               />
+            </div>
+            <h1 className="section-title">⋆⁺₊⋆₊⁺ Hackathons ⋆⁺₊⋆₊⁺</h1>
+            <div className="proj-section">
+               <Project 
+                  title="Nutriversity"
+                  img=""
+                  imgDesc=""
+                  briefDesc="Wafflehacks 2023 - Web Application"
+                  link=""
+                  linkName="Devpost"
+                  fullDesc=""
+               />
+               <Project 
+                  title="AnimEats"
+                  img=""
+                  imgDesc=""
+                  briefDesc="AthenaHacks 2023 - Web Application"
+                  link=""
+                  linkName="Devpost"
+                  fullDesc=""
                />
             </div>
             <SeeMore 
