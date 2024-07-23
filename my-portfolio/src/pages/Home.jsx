@@ -17,14 +17,6 @@ function Home() {
                   <img id="about-me-pic" src={ally} alt="picture of Allison Ly" loading="lazy"/>
                   <p id="about-me-para">
                      Hi my name is Allison Ly, and welcome to my portfolio website!
-                     {/* Hi, my name is Allison Ly and welcome to my portfolio website! I am a Computer Science
-                     major at Cal Poly Pomona and will be graduating in December 2024. In my free time, I enjoy drawing, 
-                     reading, watching anime, and playing games like Animal Crossing and Overcooked. I am interested in 
-                     pursuing a career in Frontend Development, UI/UX Design, Project Management, and Software Engineering. 
-                     I have maintained a GPA of 3.67 and made the Dean’s Honors List every semester. For almost three years 
-                     I have been an active member of sheCodes, a club that supports underrepresented students in STEM. I also 
-                     participated in the Summer 2023 Unmanned Aerial Vehicle Research Experience for Undergrads, where I 
-                     gained interdisciplinary experience. */}
                   </p>
                </div>
                <div id="connect">
