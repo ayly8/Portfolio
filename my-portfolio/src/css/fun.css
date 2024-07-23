@@ -11,30 +11,6 @@
    font-family: 'Courier New', monospace;
 }
 
-#artwork {
-   border: 2px solid #A18276;
-   border-radius: 10px;
-   box-shadow: 5px 5px 5px rgba(251,172,190, 0.5);
-   background-color: rgba(241,214,184, 0.7);
-   padding: 20px;
-   margin: 20px;
-   text-align: center;
-   width: 80%;
-   height: auto;
-   display: inline-block;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   flex: 1;
-}
-
-#art-para {
-   font-family: Verdana;
-   text-align: center;
-   text-wrap: wrap;
-}
-
 #art-imgs {
    display: flex;
    justify-content: space-between;
@@ -45,6 +21,7 @@
 #left-imgs, #right-imgs {
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
    gap: 10px;
 }
 

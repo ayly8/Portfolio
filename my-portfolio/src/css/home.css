@@ -29,11 +29,16 @@
 }
 
 #about-me-pic {
-   width: 30vw;
+   width: 25vw;
    height: auto;
+   border-radius: 50%;
 }
 
 #about-me-para {
+   background-color: rgb(255,255,255, 0.8);
+   color: #A18276;
+   padding: 10px;
+   border-radius: 5px;
    font-family: Verdana;
    text-align: center;
    text-wrap: wrap;
@@ -45,14 +50,6 @@
    justify-content: center;
    align-items: center;
    width: 100%;
-}
-
-#pic-and-desc {
-   gap: 32px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
 }
 
 #connect {
