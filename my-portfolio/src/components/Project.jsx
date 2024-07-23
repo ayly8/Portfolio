@@ -15,8 +15,7 @@ function Project(props) {
 
    return (
       <div className="proj">
-         <h3 className="proj-title">{props.title}</h3>
-         <img className="proj-img" src={props.img} alt={props.imgDesc}></img>
+         <h2 className="proj-title">{props.title}</h2>
          <h4 className="brief-desc">{props.briefDesc}</h4>
          <div className="links">
             <button

@@ -25,6 +25,21 @@
    flex: 1;
 }
 
+.proj-title, .brief-desc {
+   color: #A18276;
+   font-family: Verdana;
+}
+
+.proj-title {
+   border-bottom: 2px solid #A18276;
+   width: 70%;
+   padding: 10px;
+}
+
+.brief-desc {
+   margin: 0;
+}
+
 .links {
    display: flex;
    flex-wrap: wrap;
@@ -44,7 +59,7 @@
 }
 
 .link-btn:hover, .desc-btn:hover {
-   background-color: #DAC6B5;
+   background-color: rgb(255,255,255, 0.8);
    color: #A18276;
    border: 1px solid #A18276;
 }
@@ -63,9 +78,11 @@
  }
 
 .proj-full-desc {
-   
+   background-color: rgb(255,255,255, 0.8);
+   color: #A18276;
+   padding: 10px;
+   border-radius: 5px;
 }
-
 
 .hidden {
    display: none;

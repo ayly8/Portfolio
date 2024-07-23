@@ -14,13 +14,7 @@ function Home() {
             <h1 className="section-title">₊⋆ ☾⋆⁺₊⋆ About Me ⋆⁺₊⋆ ☾⋆⁺</h1>
             <div id="about-me">
                <div id="pic-and-desc">
-                  <img 
-                     id="about-me-pic"
-                     src={ally}
-                     alt="picture of Allison Ly"
-                     width="300px"
-                     height="400px"
-                     loading="lazy"/>
+                  <img id="about-me-pic" src={ally} alt="picture of Allison Ly" loading="lazy"/>
                   <p id="about-me-para">
                      Hi my name is Allison Ly, and welcome to my portfolio website!
                   </p>

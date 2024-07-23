@@ -10,17 +10,13 @@ function Work() {
             <div className="proj-section">
                <Project 
                   title="Portfolio Website"
-                  img=""
-                  imgDesc=""
-                  briefDesc="Fullstack Web Application"
+                  briefDesc="React Web Application"
                   link=""
                   linkName="Github"
                   fullDesc="test"
                />
                <Project 
                   title="Restaurant Delivery System"
-                  img=""
-                  imgdesc=""
                   briefDesc="Java Desktop Application"
                   link=""
                   linkName="Github"
@@ -30,8 +26,6 @@ function Work() {
             <div className="proj-section">
                <Project 
                   title="Planning Pal"
-                  img=""
-                  imgDesc=""
                   briefDesc="Fullstack Web Application"
                   link=""
                   linkName="Github"
@@ -39,8 +33,6 @@ function Work() {
                />
                <Project 
                   title="NomNomMap"
-                  img=""
-                  imgDesc=""
                   briefDesc="Android Mobile Application"
                   link=""
                   linkName="Github"
@@ -50,8 +42,6 @@ function Work() {
             <div className="proj-section">
                <Project 
                   title="ChatGPT Senior Project"
-                  img=""
-                  imgDesc=""
                   briefDesc="Data Analysis"
                   link=""
                   linkName="Github"
@@ -59,8 +49,6 @@ function Work() {
                />
                <Project 
                   title="Slime Hop"
-                  img=""
-                  imgDesc=""
                   briefDesc="2D Godot Puzzle Platform Game"
                   link=""
                   linkName="Github"
@@ -71,8 +59,6 @@ function Work() {
             <div className="proj-section">
                <Project 
                   title="Nutriversity"
-                  img=""
-                  imgDesc=""
                   briefDesc="Wafflehacks 2023 - Web Application"
                   link=""
                   linkName="Devpost"
@@ -80,8 +66,6 @@ function Work() {
                />
                <Project 
                   title="AnimEats"
-                  img=""
-                  imgDesc=""
                   briefDesc="AthenaHacks 2023 - Web Application"
                   link=""
                   linkName="Devpost"

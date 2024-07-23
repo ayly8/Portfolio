@@ -17,3 +17,22 @@
 .desc-title, .desc-duration, .desc-para {
    font-family: Verdana;
 }
+
+.desc-title {
+   background-color: #A18276;
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.desc-duration {
+   color: #A18276;
+   margin: 0;
+}
+
+.desc-para {
+   background-color: rgb(255,255,255, 0.8);
+   color: #A18276;
+   padding: 10px;
+   border-radius: 5px;
+}

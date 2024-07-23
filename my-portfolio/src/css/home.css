@@ -28,9 +28,15 @@
    flex: 1;
 }
 
+#about-me-pic {
+   width: 30vw;
+   height: auto;
+}
+
 #about-me-para {
    font-family: Verdana;
-   text-align: justify;
+   text-align: center;
+   text-wrap: wrap;
 }
 
 #work-exp, #extra-exp {
@@ -67,11 +73,11 @@
    padding: 20px;
    margin: 20px;
    cursor: pointer;
+   border-radius: 5px;;
 }
 
 .connect-options:hover {
-   background-color: #DAC6B5;
-   /* background-color: rgba(251,172,190, 0.5); */
+   background-color: rgb(255,255,255, 0.8);
    color: #A18276;
    border: 1px solid #A18276;
 }
