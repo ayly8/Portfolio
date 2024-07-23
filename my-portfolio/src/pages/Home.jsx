@@ -10,7 +10,7 @@ function Home() {
 
    return (
       <>
-         <div id="everything">
+         <div id="everything-home">
             <h1 className="section-title">₊⋆ ☾⋆⁺₊⋆ About Me ⋆⁺₊⋆ ☾⋆⁺</h1>
             <div id="about-me">
                <div id="pic-and-desc">

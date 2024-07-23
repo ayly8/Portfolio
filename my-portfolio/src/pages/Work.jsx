@@ -5,7 +5,7 @@ import '../css/work.css'
 function Work() {
    return (
       <>
-         <div id="everything">
+         <div id="everything-work">
             <h1 className="section-title">.｡*ﾟ+.*. Projects +..｡*ﾟ+</h1>
             <div className="proj-section">
                <Project 
