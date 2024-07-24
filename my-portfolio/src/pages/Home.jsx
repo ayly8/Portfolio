@@ -16,7 +16,7 @@ function Home() {
                <div id="pic-and-desc">
                   <img id="about-me-pic" src={ally} alt="picture of Allison Ly" loading="lazy"/>
                   <p id="about-me-para">
-                     Hi my name is Allison Ly, and welcome to my portfolio website!
+                     {/* Hi my name is Allison Ly, and welcome to my portfolio website! */}
                   </p>
                </div>
                <div id="connect">
