@@ -28,6 +28,7 @@
 .proj-title, .brief-desc {
    color: #A18276;
    font-family: Verdana;
+   overflow-wrap: break-word;
 }
 
 .proj-title {
