@@ -41,6 +41,17 @@
    margin: 0;
 }
 
+.proj-img {
+   width: 25vw;
+   height: auto;
+   margin: 5px;
+}
+
+.demo-link {
+   color: #A18276;
+   font-family: Verdana;
+}
+
 .links {
    display: flex;
    flex-wrap: wrap;
