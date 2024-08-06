@@ -11,7 +11,7 @@ function Home() {
    return (
       <>
          <div id="everything-home">
-            <h1 className="section-title">₊⋆ ☾⋆⁺₊⋆ About Me ⋆⁺₊⋆ ☾⋆⁺</h1>
+            <h1 className="section-title">ﾟ+*:ꔫ:* About Me *:ꔫ:*+ﾟ</h1>
             <div id="about-me">
                <div id="pic-and-desc">
                   <img id="about-me-pic" src={ally} alt="picture of Allison Ly" loading="lazy"/>
@@ -32,7 +32,7 @@ function Home() {
                   </div>
                   <div 
                      className="connect-options"
-                     onClick={() => {window.location.href = 'mailto:allison@example.com';}}>
+                     onClick={() => {window.location.href = 'mailto:allison.y.ly@gmail.com';}}>
                      <h3>Email</h3>
                   </div>
                   <div 

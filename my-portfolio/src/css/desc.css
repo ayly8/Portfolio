@@ -27,7 +27,7 @@
 
 .desc-duration {
    color: #A18276;
-   margin: 0;
+   margin: 10px;
 }
 
 .desc-para {
@@ -35,4 +35,9 @@
    color: #A18276;
    padding: 10px;
    border-radius: 5px;
+   text-align: left;
+}
+
+.desc-para li {
+   margin-bottom: 5px; 
 }
