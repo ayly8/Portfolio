@@ -78,7 +78,7 @@ function Work() {
                   imgDesc="chat gpt bias example"
                   link="https://drive.google.com/file/d/1w2c8bP2h33B-bFoUmRG3SfAeJIp45loA/view?usp=sharing"
                   linkName="Poster"
-                  fullDesc="Evaluatedpotential gender and racial bias in ChatGPT. Crafted prompts on various scenarios that may produce bias based on the 
+                  fullDesc="Evaluated potential gender and racial bias in ChatGPT. Crafted prompts on various scenarios that may produce bias based on the 
                   gender identity and ethnic background of the names provided. Conducted iterative testing with prompt variations to interpret the results, 
                   generating a dataset for future analysis. Co-authored a research poster with my team discussing our results for research symposium."
                />
