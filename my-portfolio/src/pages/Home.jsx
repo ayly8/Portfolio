@@ -2,6 +2,9 @@ import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
 import '../css/home.css'
 import ally from '../assets/Allison_Ly.png'
+import slide1 from "../assets/RestaurantDeliverySystem.png"
+import slide2 from "../assets/Nomnommap.png"
+import slide3 from "../assets/PlanningPal.png"
 
 function Home() {
    const openInNewTab = (url) => () => {
@@ -46,6 +49,15 @@ function Home() {
                      <h3>Github</h3>
                   </div>
                </div>
+            </div>
+            <div className="slidehow">
+               <div className="slides">
+                  <img src={slide1} alt="Restaurant Delivery System Project Preview"></img>
+                  <img src={slide2} alt="Nomnommap Project Preview"></img>
+                  <img src={slide3} alt="Planning Pal Project Preview"></img>
+               </div>
+               <button className="prev_btn">&#10094;</button>
+               <button className="next_btn">&#10095;</button>
             </div>
             <div id="work-exp">
                <h1 className="section-title">: *✧･ﾟ:* Work Experience *:･ﾟ✧*:</h1>
