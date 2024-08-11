@@ -5,7 +5,7 @@ function NavBar() {
       <nav id="nav">
          <Link to="/" id="ayly-title">Allison Y. Ly</Link>
          <ul>
-            <li><Link to="/work">Projects</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/fun">Fun</Link></li>
          </ul>
       </nav>

@@ -1,14 +1,25 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
 import '../css/home.css'
 import ally from '../assets/Allison_Ly.png'
-import slide1 from "../assets/RestaurantDeliverySystem.png"
-import slide2 from "../assets/Nomnommap.png"
-import slide3 from "../assets/PlanningPal.png"
+import proj1 from "../assets/RestaurantDeliverySystem.png"
+import proj2 from "../assets/Nomnommap.png"
+import proj3 from "../assets/PlanningPal.png"
 
 function Home() {
    const openInNewTab = (url) => () => {
       window.open(url, '_blank', 'noopener,noreferrer');
+   };
+
+   const navigate = useNavigate();
+
+   const goToSection = (path, sectionId) => () => {
+      navigate(path);
+      setTimeout(() => {
+         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'auto' });
+      }, 100);
    };
 
    return (
@@ -50,14 +61,13 @@ function Home() {
                   </div>
                </div>
             </div>
-            <div className="slidehow">
-               <div className="slides">
-                  <img src={slide1} alt="Restaurant Delivery System Project Preview"></img>
-                  <img src={slide2} alt="Nomnommap Project Preview"></img>
-                  <img src={slide3} alt="Planning Pal Project Preview"></img>
+            <div id="featured">
+               <h1 className="section-title">.｡*ﾟ+.*.｡ Featured Projects +..｡*ﾟ+</h1>
+               <div id="featured-work">
+                  <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-1')}></img>
+                  <img src={proj2} alt="Nomnommap Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
+                  <img src={proj3} alt="Planning Pal Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
                </div>
-               <button className="prev_btn">&#10094;</button>
-               <button className="next_btn">&#10095;</button>
             </div>
             <div id="work-exp">
                <h1 className="section-title">: *✧･ﾟ:* Work Experience *:･ﾟ✧*:</h1>
@@ -99,8 +109,8 @@ function Home() {
                   building teamwork skills for the school year, while the banquet celebrated the accomplishments and achievements of sheCodes throughout the year."/>
             </div>
             <SeeMore 
-               first_location="/work"
-               first_option_name="Work"
+               first_location="/projects"
+               first_option_name="Projects"
                second_location="/fun"
                second_option_name="Fun"/>
             <br></br>

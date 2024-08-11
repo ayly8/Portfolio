@@ -1,6 +1,6 @@
-import Project from "../components/Project"
+import ProjectInfo from "../components/ProjectInfo"
 import SeeMore from "../components/SeeMore"
-import '../css/work.css'
+import '../css/projects.css'
 import portfolio from '../assets/project_ss/portfolio_ss.png'
 import restaurant from '../assets/project_ss/restaurant_ss.png'
 import planning from '../assets/project_ss/planningpal_ss.png'
@@ -15,8 +15,8 @@ function Work() {
       <>
          <div id="everything-work">
             <h1 className="section-title">.｡*ﾟ+.*. Projects +..｡*ﾟ+</h1>
-            <div className="proj-section">
-               <Project 
+            <div id="proj-section-1">
+               <ProjectInfo 
                   title="Portfolio Website"
                   briefDesc="React Web Application"
                   img={portfolio}
@@ -27,7 +27,7 @@ function Work() {
                   Utilized React to facilitate building a component based website. Used Figma to create prototype designs of the website. 
                   Deployed the website through GitHub Pages."
                />
-               <Project 
+               <ProjectInfo 
                   title="Restaurant Delivery System"
                   briefDesc="Java Desktop Application"
                   img={restaurant}
@@ -42,8 +42,8 @@ function Work() {
                   demoDesc="Presentation"
                />
             </div>
-            <div className="proj-section">
-               <Project 
+            <div id="proj-section-2">
+               <ProjectInfo 
                   title="Planning Pal"
                   briefDesc="Full Stack Web Application"
                   img={planning}
@@ -57,7 +57,7 @@ function Work() {
                   demoLink="https://youtu.be/vOll1PZXNsk"
                   demoDesc="Demo"
                />
-               <Project 
+               <ProjectInfo 
                   title="NomNomMap"
                   briefDesc="Android Mobile Application"
                   img={nomnommap}
@@ -70,8 +70,8 @@ function Work() {
                   user interface for: Map, Meal Detail, Profile, and Settings, using Android Studio's Layout Editor to assemble components."
                />
             </div>
-            <div className="proj-section">
-               <Project 
+            <div id="proj-section-3">
+               <ProjectInfo 
                   title="ChatGPT Social Bias Senior Project"
                   briefDesc="Data Analysis"
                   img={gpt}
@@ -82,7 +82,7 @@ function Work() {
                   gender identity and ethnic background of the names provided. Conducted iterative testing with prompt variations to interpret the results, 
                   generating a dataset for future analysis. Co-authored a research poster with my team discussing our results for research symposium."
                />
-               <Project 
+               <ProjectInfo 
                   title="Slime Hop"
                   briefDesc="2D Godot Puzzle Platform Game"
                   img={slime}
@@ -98,8 +98,8 @@ function Work() {
                />
             </div>
             <h1 className="section-title">✿•´*¨`*•✿ Hackathons ✿•*`¨*•✿</h1>
-            <div className="proj-section">
-               <Project 
+            <div id="hack-section-1">
+               <ProjectInfo 
                   title="Nutriversity"
                   briefDesc="Wafflehacks 2023 - Web Application"
                   img={nutriversity}
@@ -111,7 +111,7 @@ function Work() {
                   demoLink="https://www.youtube.com/watch?v=VXGH4tzbrL0"
                   demoDesc="Demo"
                />
-               <Project 
+               <ProjectInfo 
                   title="AnimEats"
                   briefDesc="AthenaHacks 2023 - Web Application"
                   img={animeats}

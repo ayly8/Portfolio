@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-import '../css/project.css'
+import '../css/projectinfo.css'
 
 function Project(props) {
    const [descVisible, setDescVisible] = useState(false);

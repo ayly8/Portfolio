@@ -84,5 +84,5 @@ body {
 }
 
 .socials-img:hover {
-  filter: hue-rotate(18deg) saturate(1) sepia(1);
+  filter: hue-rotate(180deg) saturate(1) sepia(1);
 }

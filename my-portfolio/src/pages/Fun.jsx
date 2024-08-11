@@ -29,8 +29,8 @@ function Fun() {
             <SeeMore 
                first_location="/"
                first_option_name="Home"
-               second_location="/work"
-               second_option_name="Work"/>
+               second_location="/projects"
+               second_option_name="Projects"/>
             <br></br>
          </div>
       </>
