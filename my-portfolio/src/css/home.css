@@ -92,11 +92,6 @@
    width: 100%;
  }
 
-#featured {
-   display: flex;
-   flex-direction: column;
-}
-
 #featured-work {
    width: 100%;
    display: flex;
@@ -105,8 +100,9 @@
 }
 
 #featured-work img {
-   width: 30%;
+   width: 400px;
    height: auto;
+   margin: 5px;
    border: 2px solid #A18276;
    border-radius: 10px;
 }

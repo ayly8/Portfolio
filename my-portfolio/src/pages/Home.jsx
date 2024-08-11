@@ -61,13 +61,11 @@ function Home() {
                   </div>
                </div>
             </div>
-            <div id="featured">
-               <h1 className="section-title">.｡*ﾟ+.*.｡ Featured Projects +..｡*ﾟ+</h1>
-               <div id="featured-work">
-                  <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-1')}></img>
-                  <img src={proj2} alt="Nomnommap Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
-                  <img src={proj3} alt="Planning Pal Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
-               </div>
+            <h1 className="section-title">.｡*ﾟ+.*.｡ Featured Projects +..｡*ﾟ+</h1>
+            <div id="featured-work">
+               <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-1')}></img>
+               <img src={proj2} alt="Nomnommap Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
+               <img src={proj3} alt="Planning Pal Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
             </div>
             <div id="work-exp">
                <h1 className="section-title">: *✧･ﾟ:* Work Experience *:･ﾟ✧*:</h1>
