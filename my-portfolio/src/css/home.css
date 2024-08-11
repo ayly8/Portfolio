@@ -93,20 +93,19 @@
  }
 
 #featured {
-   width: 100%;
-   padding: 10px;
    display: flex;
    flex-direction: column;
 }
 
 #featured-work {
+   width: 100%;
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
 }
 
 #featured-work img {
-   width: 30vw;
+   width: 30%;
    height: auto;
    border: 2px solid #A18276;
    border-radius: 10px;
