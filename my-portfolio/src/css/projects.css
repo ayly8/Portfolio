@@ -8,7 +8,10 @@
 }
 
 .section-title {
-   font-family: 'Courier New', monospace;
+   font-family: Verdana;
+   font-size: 32px;
+   margin-bottom: 0;
+   color: #A18276;
 }
 
 #proj-section-1, #proj-section-2, #proj-section-3, #hack-section-1 {

@@ -1,5 +1,8 @@
 .section-title {
-   font-family: 'Courier New', monospace;
+   font-family: Verdana;
+   font-size: 32px;
+   margin-bottom: 0;
+   color: #A18276;
 }
 
 .see-more {

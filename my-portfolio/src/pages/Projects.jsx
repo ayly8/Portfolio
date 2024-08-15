@@ -14,7 +14,7 @@ function Work() {
    return (
       <>
          <div id="everything-work">
-            <h1 className="section-title">.｡*ﾟ+.*. Projects +..｡*ﾟ+</h1>
+            <p className="section-title">+.* Projects +.*</p>
             <div id="proj-section-1">
                <ProjectInfo 
                   title="Portfolio Website"
@@ -97,7 +97,7 @@ function Work() {
                   demoDesc="Demo"
                />
             </div>
-            <h1 className="section-title">✿•´*¨`*•✿ Hackathons ✿•*`¨*•✿</h1>
+            <p className="section-title">*•✿ Hackathons ✿•*</p>
             <div id="hack-section-1">
                <ProjectInfo 
                   title="Nutriversity"

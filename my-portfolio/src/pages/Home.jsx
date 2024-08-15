@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
@@ -9,10 +10,6 @@ import proj2 from "../assets/Nomnommap.png"
 import proj3 from "../assets/PlanningPal.png"
 
 function Home() {
-   const openInNewTab = (url) => () => {
-      window.open(url, '_blank', 'noopener,noreferrer');
-   };
-
    const navigate = useNavigate();
 
    const goToSection = (path, sectionId) => () => {
@@ -25,50 +22,50 @@ function Home() {
    return (
       <>
          <div id="everything-home">
-            <h1 className="section-title">ﾟ+*:ꔫ:* About Me *:ꔫ:*+ﾟ</h1>
+            <p className="section-title">ꔫ: About Me :ꔫ</p>
             <div id="about-me">
                <div id="pic-and-desc">
                   <img id="about-me-pic" src={ally} alt="picture of Allison Ly" loading="lazy"/>
                   <p id="about-me-para">
                   Hi, my name is Allison Ly and welcome to my portfolio website! I am a Computer Science major at Cal Poly Pomona and will be 
-                  graduating in December 2024. In my free time, I enjoy drawing, reading, watching anime, and playing games. I am interested in 
-                  Frontend Development, UI/UX Design, Project Management, and Software Engineering. I have maintained a GPA of 3.67 and made the 
-                  Dean’s Honors List every semester. For almost three years I have been an active member of Cal Poly Pomona’s sheCodes club, which 
-                  supports underrepresented students in STEM. I also participated in the Summer 2023 Unmanned Aerial Vehicle Research Experience 
-                  for Undergrads at Cal Poly Pomona, where I gained interdisciplinary experience.
+                  graduating in December 2024. I am interested in a career within the Project Management and Software Engineering fields. I have 
+                  maintained a GPA of 3.67 and made the Dean’s Honors List every semester. For almost three years I have been an active member of 
+                  Cal Poly Pomona’s sheCodes club, which supports underrepresented students in STEM. I also participated in the Summer 2023 Unmanned 
+                  Aerial Vehicle Research Experience for Undergrads at Cal Poly Pomona, where I gained interdisciplinary experience.
                   </p>
                </div>
                <div id="connect">
-                  <div 
-                     className="connect-options" 
-                     onClick={openInNewTab('https://docs.google.com/document/d/1sOQ6vM8wcC0NNTz2ZSJfEKxyDb9MASPyLu3Si5iHMpg/edit?usp=sharing')}>
+                  <a href="https://docs.google.com/document/d/1sOQ6vM8wcC0NNTz2ZSJfEKxyDb9MASPyLu3Si5iHMpg/edit?usp=sharing" className="connect-options" target='_blank'>
                      <h3>Resume</h3>
-                  </div>
-                  <div 
-                     className="connect-options"
-                     onClick={() => {window.location.href = 'mailto:allison.y.ly@gmail.com';}}>
+                  </a>
+                  <a href="mailto:allison.y.ly@gmail.com" className="connect-options" target='_blank'>
                      <h3>Email</h3>
-                  </div>
-                  <div 
-                     className="connect-options"
-                     onClick={openInNewTab('https://www.linkedin.com/in/allison-y-ly/')}>
+                  </a>
+                  <a href="https://www.linkedin.com/in/allison-y-ly/" className="connect-options" target='_blank'>
                      <h3>Linkedin</h3>
-                  </div>
-                  <div
-                     className="connect-options"
-                     onClick={openInNewTab('https://github.com/ayly8')}>
+                  </a>
+                  <a href="https://github.com/ayly8" className="connect-options" target='_blank'>
                      <h3>Github</h3>
-                  </div>
+                  </a>
                </div>
             </div>
-            <h1 className="section-title">.｡*ﾟ+.*.｡ Featured Projects +..｡*ﾟ+</h1>
+            <p className="section-title">.｡* Featured Projects *｡.</p>
             <div id="featured-work">
+               {/* <Link to="/projects#proj-section-1">
+                  <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy"></img>
+               </Link>
+               <Link to="/projects#proj-section-2">
+                  <img src={proj2} alt="Nomnommap Project Preview" loading="lazy"></img>
+               </Link>
+               <Link to="/projects#proj-section-2">
+                  <img src={proj3} alt="Planning Pal Project Preview" loading="lazy"></img>
+               </Link> */}
                <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-1')}></img>
                <img src={proj2} alt="Nomnommap Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
                <img src={proj3} alt="Planning Pal Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
             </div>
             <div id="work-exp">
-               <h1 className="section-title">: *✧･ﾟ:* Work Experience *:･ﾟ✧*:</h1>
+               <p className="section-title">･✧･ Work Experience ･✧･</p>
                <Description 
                   title="Research Experience for Undergrads (REU)"
                   duration="June - August 2023"
@@ -90,7 +87,7 @@ function Home() {
                   Algebra 1 weekly during the semester."/>
             </div>
             <div id="extra-exp">
-               <h1 className="section-title">⋆ ˚｡⋆୨୧˚ Extracurricular ˚୨୧⋆｡˚ ⋆</h1>
+               <p className="section-title">˚୨୧ Extracurricular ୨୧˚</p>
                <Description 
                   title="Cal Poly Pomona sheCodes Internal Vice President"
                   duration="May 2023 - May 2024"

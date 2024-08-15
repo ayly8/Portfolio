@@ -12,7 +12,7 @@ function Fun() {
    return (
       <>
          <div id="everything-fun">
-            <h1 className="section-title">༻❀༺ Anime Fanart ༻❀༺</h1>
+            <p className="section-title">༻ Anime Fanart ༺</p>
             <div id="art-imgs">
                <div id="left-imgs">
                   <img src={hxh} alt="gon and killua drawing from hxh" loading="lazy"/>

@@ -12,7 +12,7 @@ function SeeMore(props) {
 
    return (
       <>
-         <h1 className="section-title">⋆｡ﾟ✿｡⋆｡ See More ⋆｡ﾟ✿｡⋆｡</h1>
+         <p className="section-title">⋆｡✿ See More ✿⋆｡ﾟ</p>
          <div className="see-more">
             <div className="see-more-options" onClick={() => handleNavigation(props.first_location)}>
                <h3>{props.first_option_name}</h3>
