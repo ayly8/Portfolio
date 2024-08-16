@@ -15,10 +15,10 @@ function SeeMore(props) {
          <p className="section-title">⋆｡✿ See More ✿⋆｡ﾟ</p>
          <div className="see-more">
             <div className="see-more-options" onClick={() => handleNavigation(props.first_location)}>
-               <h3>{props.first_option_name}</h3>
+               <p>{props.first_option_name}</p>
             </div>
             <div className="see-more-options" onClick={() => handleNavigation(props.second_location)}>
-               <h3>{props.second_option_name}</h3>
+               <p>{props.second_option_name}</p>
             </div>
          </div>
       </>

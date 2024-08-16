@@ -13,6 +13,10 @@ function Project(props) {
       window.open(url, '_blank', 'noopener,noreferrer');
    };
 
+   const bulletPoints = props.fullDesc.split('.').filter(sentence => sentence.trim().length > 0).map((sentence, index) => (
+      <li key={index}>{sentence.trim() ? sentence.trim() + '.' : ''}</li>
+   ));
+
    return (
       <div className="proj">
          <h2 className="proj-title">{props.title}</h2>
@@ -30,7 +34,12 @@ function Project(props) {
                Description
             </button>
          </div>
-         <p className={`proj-full-desc ${descVisible ? "visible" : "hidden"}`}>{props.fullDesc}</p>
+         {/* <p className={`proj-full-desc ${descVisible ? "visible" : "hidden"}`}>{props.fullDesc}</p> */}
+         <div className={`proj-full-desc ${descVisible ? "visible" : "hidden"}`}>
+            <ul>
+               {bulletPoints}
+            </ul>
+         </div>
          <p><a className="demo-link" href={props.demoLink} target="_blank">{props.demoDesc}</a></p>
       </div>
    );

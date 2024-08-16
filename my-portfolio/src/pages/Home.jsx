@@ -12,11 +12,9 @@ import proj3 from "../assets/PlanningPal.png"
 function Home() {
    const navigate = useNavigate();
 
-   const goToSection = (path, sectionId) => () => {
-      navigate(path);
-      setTimeout(() => {
-         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'auto' });
-      }, 100);
+   const handleNavigation = (location) => {
+      window.scrollTo(0, 0); // Scroll to the top
+      navigate(location);    // Navigate to the new route
    };
 
    return (
@@ -51,7 +49,7 @@ function Home() {
             </div>
             <p className="section-title">.｡* Featured Projects *｡.</p>
             <div id="featured-work">
-               {/* <Link to="/projects#proj-section-1">
+               <Link to="/projects#proj-section-1" onClick={() => handleNavigation("/projects#proj-section-1")}>
                   <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy"></img>
                </Link>
                <Link to="/projects#proj-section-2">
@@ -59,49 +57,41 @@ function Home() {
                </Link>
                <Link to="/projects#proj-section-2">
                   <img src={proj3} alt="Planning Pal Project Preview" loading="lazy"></img>
-               </Link> */}
-               <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-1')}></img>
-               <img src={proj2} alt="Nomnommap Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
-               <img src={proj3} alt="Planning Pal Project Preview" loading="lazy" onClick={goToSection('/projects', 'proj-section-2')}></img>
+               </Link>
             </div>
             <div id="work-exp">
                <p className="section-title">･✧･ Work Experience ･✧･</p>
                <Description 
-                  title="Research Experience for Undergrads (REU)"
+                  title="Research Experience for Undergrads"
                   duration="June - August 2023"
-                  desc="I participated in a National Science Foundation (NSF) funded Research Experience for Undergrads (REU) at Cal Poly Pomona 
-                  as an Unmanned Aerial Vehicle (UAV) research assistant on the 'UAV Fire Detection and Suppression' team. Selected as one of 12 
-                  participants from over 100 applicants, I gained hands-on experience with both hardware and software. The main tasks assigned to 
-                  me were connecting the UAV to the ground control station (GCS) to relay the flight log data, as well as improve the visualization 
-                  of that data. I configured two Digi XBee radio communication devices using XCTU software to enable the UAV to send GPS coordinates 
-                  to the GCS. I utilized NASA's Worldwide Wind Java API with NetBeans to ensure the GCS received and displayed the correct GPS 
-                  coordinates. To enhance data visualization, I created a graphical user interface using Java Swing to display the UAV flight log data. 
-                  At the end of the program, I co-authored a final report with my team discussing our literature review, objectives, methodology, and 
-                  results for research paper."/>
+                  desc="Selected as one of 12 participants from over 100 applicants in a National Science Foundation (NSF) funded Research Experience 
+                  for Undergrads (REU) at Cal Poly Pomona as an Unmanned Aerial Vehicle (UAV) research assistant.. Configured two Digi XBee radio communication 
+                  devices to interact with each other in order for the UAV to send GPS coordinates the ground control station (GCS). Utilized NASA's Worldwide 
+                  Wind Java API to ensure the GCS received and displayed the correct GPS coordinates. Implemented a graphical user interface using Java Swing to 
+                  enhance UAV flight log data visualization onto the GCS."/>
                <Description 
                   title="Aims Academy"
                   duration="July - December 2022"
-                  desc="For half a year I worked as a teacher at Aims Academy, located in Walnut CA. During the Summer, I managed 10 students in a combination 
-                  class of 2nd-3rd graders, and in the school semester I managed 15 students in a combination class of K-1st graders. I taught Math and English 
-                  to students in various learning stages using common core methods, and provided homework assistance. Additionally, I tutored Pre-Algebra and 
-                  Algebra 1 weekly during the semester."/>
+                  desc="Worked as a teacher at Aims Academy, located in Walnut CA, for half a year. Managed 10 students in a combination class of 2nd-3rd 
+                  graders during the Summer, and managed 15 students in a combination class of K-1st graders during the semester. Taught Math and English 
+                  to students in various learning stages using common core methods, and provided homework assistance. Tutored Pre-Algebra and Algebra 1 weekly 
+                  during the semester."/>
             </div>
             <div id="extra-exp">
                <p className="section-title">˚୨୧ Extracurricular ୨୧˚</p>
                <Description 
                   title="Cal Poly Pomona sheCodes Internal Vice President"
                   duration="May 2023 - May 2024"
-                  desc="As Internal Vice President, I was in charge of our two annual professional events, our Semester Long Project (SLP) Program during the Fall 
-                  and our Future Woman Developer’s (FWD) Conference. I planned and organized SLP 2023 to offer underrepresented students team project opportunities 
-                  that allow them to explore CS topics outside of class. During 9 weeks of SLP, I oversaw the development of 8 teams and facilitated Demo Day. I 
-                  directed and hosted the FWD 2024 conference, introducing 25 middle/high school female and minority students to various CS topics. I provided students 
-                  with 3 hands-on workshops about Web Development, Python, and Cybersecurity, as well as a Minority in Tech panel."/>
+                  desc="Planned and organized the Semester Long Project (SLP) 2023 Program to offer underrepresented students team project opportunities 
+                  that allow them to explore CS topics outside of class. Oversaw the development of 8 SLP teams during the 9-week program and facilitated SLP Demo Day. 
+                  Directed and hosted the Future Women Developer's (FWD) 2024 Conference, introducing 25 middle/high school female and minority students to various CS topics. 
+                  Provided students with 3 hands-on workshops about Web Development, Python, and Cybersecurity, as well as a Minority in Tech panel."/>
                <Description 
                   title="Cal Poly Pomona sheCodes Social Chair"
                   duration="May 2023 - May 2024"
-                  desc="As Social Chair, I was in charge of planning and hosting monthly socials, executive board retreats, and our End of the Year banquet for over 50 members.  
-                  Each social event aimed to foster an inclusive and supportive environment for women and minorities in STEM. Moreover, the executive board retreats focused on 
-                  building teamwork skills for the school year, while the banquet celebrated the accomplishments and achievements of sheCodes throughout the year."/>
+                  desc="Planned and hosted monthly socials, executive board retreats, and End of the Year banquet for over 50 members. Each social event aimed to foster an 
+                  inclusive and supportive environment for women and minorities in STEM. Executive board retreats focused on building teamwork skills for the school year. Banquet 
+                  celebrated the accomplishments and achievements of sheCodes throughout the year."/>
             </div>
             <SeeMore 
                first_location="/projects"

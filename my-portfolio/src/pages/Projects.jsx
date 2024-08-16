@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ProjectInfo from "../components/ProjectInfo"
 import SeeMore from "../components/SeeMore"
 import '../css/projects.css'
@@ -10,7 +12,24 @@ import slime from '../assets/project_ss/slimehop_ss.png'
 import nutriversity from '../assets/project_ss/nutriversity_ss.png'
 import animeats from '../assets/project_ss/animeats_ss.png'
 
-function Work() {
+function Projects() {
+   const { hash } = useLocation();
+
+   useEffect(() => {
+      //if there is a hash value
+      if (hash) {
+         //remove the hash value
+         const elementId = hash.replace('#', '');
+         //find the element with specified id
+         const element = document.getElementById(elementId);
+         //if the element exists
+         if (element) {
+            //scroll to the specific element
+            element.scrollIntoView({ behavior: 'smooth' });
+         }
+      }
+   }, [hash]);
+
    return (
       <>
          <div id="everything-work">
@@ -35,9 +54,8 @@ function Work() {
                   link="https://github.com/CS3560-02-07/Restaurant-Delivery-System"
                   linkName="Github"
                   fullDesc="Collaborated with a team of 5 to create a Java desktop application, allowing restaurants to request orders to be 
-                  delivered and drivers to pick-up those orders. Depending on the user, after logging in they would be presented with a specified 
-                  user interface for restaurants or drivers. Conceptualized the graphical user interface (GUI) by using Figma and then utilized Java 
-                  Swing to integrate GUI components: login, account registration, profiles for restaurant owners and delivery drivers."
+                  delivered and drivers to pick-up those orders. Conceptualized the graphical user interface (GUI) by using Figma. Utilized Java Swing 
+                  to integrate GUI components: login, account registration, profiles for restaurant owners and delivery drivers."
                   demoLink="https://drive.google.com/file/d/1q3xBP-NyueP8Eox-B1KXruTVzGJScjQN/view?usp=sharing"
                   demoDesc="Presentation"
                />
@@ -50,8 +68,7 @@ function Work() {
                   imgDesc="planning pal homepage"
                   link="https://github.com/ayly8/Planning-Pattern"
                   linkName="Github"
-                  fullDesc="Full stack web application that is designed to help users plan anything or to help them get started with planning if 
-                  they are stuck. Users answer 3 questions regarding what they want to plan and those answers are used as input. Leveraged the 
+                  fullDesc="Full stack web application that is designed to help users plan anything after answering 3 questions. Leveraged the 
                   ChatGPT API to generate a suggested plan based on the inputs. Used Flask to aid the process of retrieving user inputs for the 
                   ChatGPT API to generate the output. Constructed the website using HTML, CSS, and JavaScript."
                   demoLink="https://youtu.be/vOll1PZXNsk"
@@ -64,10 +81,10 @@ function Work() {
                   imgDesc="nomnommap app screenshots"
                   link="https://github.com/yuunster/NomNomMap"
                   linkName="Github"
-                  fullDesc="Collaborated with a team of 3 to create an Android mobile application, utilizing the Google Maps API where users can login, 
-                  store information about meals based on their location, and view their history of logged meals. Used Figma to create a prototype version 
-                  of our mobile application. Enhanced user experience by implementing a bottom navigation bar and camera feature in Kotlin. Constructed the 
-                  user interface for: Map, Meal Detail, Profile, and Settings, using Android Studio's Layout Editor to assemble components."
+                  fullDesc="Collaborated with a team of 3 to create an Android mobile application, utilizing the Google Maps API where users can login and 
+                  store information about meals. Used Figma to create a prototype version of our mobile application. Enhanced user experience by implementing 
+                  a bottom navigation bar and camera feature in Kotlin. Constructed the user interface for: Map, Meal Detail, Profile, and Settings, using 
+                  Android Studio's Layout Editor to assemble components."
                />
             </div>
             <div id="proj-section-3">
@@ -89,10 +106,9 @@ function Work() {
                   imgDesc="slime hop menu screen"
                   link="https://piggyfriend.itch.io/slime-hop"
                   linkName="itch.io"
-                  fullDesc="Collaborated with a team of 7 to create a 2D puzzle platform game. Users play as a slime that can split into multiple copies using a 
-                  Copy and Swap mechanic to traverse through various obstacles. Produced two captivating background illustrations for the menu and credits artwork 
-                  using MediBang Paint illustration software. Developed the menu scene and user interface for menu buttons in Godot, strategically designed to 
-                  captivate players’ interest."
+                  fullDesc="Collaborated with a team of 7 to create a 2D puzzle platform game. Produced two captivating background illustrations for the menu 
+                  and credits artwork using MediBang Paint illustration software. Developed the menu scene and user interface for menu buttons in Godot, 
+                  strategically designed to captivate players’ interest."
                   demoLink="https://www.youtube.com/watch?v=kn8intQOk7U&t=1s"
                   demoDesc="Demo"
                />
@@ -136,4 +152,4 @@ function Work() {
    );
 }
 
-export default Work
+export default Projects
