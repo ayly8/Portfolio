@@ -10,12 +10,12 @@ import proj2 from "../assets/Nomnommap.png"
 import proj3 from "../assets/PlanningPal.png"
 
 function Home() {
-   const navigate = useNavigate();
+   // const navigate = useNavigate();
 
-   const handleNavigation = (location) => {
-      window.scrollTo(0, 0); // Scroll to the top
-      navigate(location);    // Navigate to the new route
-   };
+   // const handleNavigation = (location) => {
+   //    window.scrollTo(0, 0); // Scroll to the top
+   //    navigate(location);    // Navigate to the new route
+   // };
 
    return (
       <>
@@ -49,7 +49,10 @@ function Home() {
             </div>
             <p className="section-title">.｡* Featured Projects *｡.</p>
             <div id="featured-work">
-               <Link to="/projects#proj-section-1" onClick={() => handleNavigation("/projects#proj-section-1")}>
+               {/* <Link to="/projects#proj-section-1" onClick={() => handleNavigation("/projects#proj-section-1")}>
+                  <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy"></img>
+               </Link> */}
+               <Link to="/projects#proj-section-1">
                   <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy"></img>
                </Link>
                <Link to="/projects#proj-section-2">

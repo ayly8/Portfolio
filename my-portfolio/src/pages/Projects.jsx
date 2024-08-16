@@ -25,7 +25,7 @@ function Projects() {
          //if the element exists
          if (element) {
             //scroll to the specific element
-            element.scrollIntoView({ behavior: 'smooth' });
+            element.scrollIntoView({ behavior: 'auto' });
          }
       }
    }, [hash]);
