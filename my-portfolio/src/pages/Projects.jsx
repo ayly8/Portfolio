@@ -12,6 +12,7 @@ import slime from '../assets/project_ss/slimehop_ss.png'
 import nutriversity from '../assets/project_ss/nutriversity_ss.png'
 import animeats from '../assets/project_ss/animeats_ss.png'
 
+// create the projects page
 function Projects() {
    const { hash } = useLocation();
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 
+// this component creates the navigation bar section
 function NavBar() {
    return (
       <nav id="nav">

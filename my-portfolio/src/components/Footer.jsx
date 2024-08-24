@@ -3,6 +3,7 @@ import email from '../assets/mail.png'
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 
+// this component creates the footer section
 function Footer() {
    return (
       <footer id="foot">

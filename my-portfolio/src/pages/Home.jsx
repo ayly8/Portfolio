@@ -8,6 +8,7 @@ import proj1 from "../assets/RestaurantDeliverySystem.png"
 import proj2 from "../assets/Nomnommap.png"
 import proj3 from "../assets/PlanningPal.png"
 
+// creates the home page
 function Home() {
 
    return (

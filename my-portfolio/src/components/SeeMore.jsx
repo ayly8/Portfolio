@@ -2,7 +2,9 @@ import { useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import '../css/seemore.css'
 
+// this component creates the see more section at the bottom of each page
 function SeeMore(props) {
+   // react hook used to navigate to pages
    const navigate = useNavigate();
 
    const handleNavigation = (location) => {
@@ -25,6 +27,7 @@ function SeeMore(props) {
    );
 }
 
+// specify what type of variable is required for each prop
 SeeMore.propTypes= {
    first_location: PropTypes.string.isRequired,
    first_option_name: PropTypes.string.isRequired,

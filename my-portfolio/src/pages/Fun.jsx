@@ -8,6 +8,7 @@ import mujika from '../assets/art/mujika.jpg'
 import nezuko from '../assets/art/nezuko.jpg'
 import tanjiro from '../assets/art/tanjiro.jpg'
 
+// creates the fun page
 function Fun() {
    return (
       <>
