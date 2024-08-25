@@ -1,5 +1,5 @@
 # :strawberry: Portfolio Website :strawberry: 
-This is a react web application that was made to showcase all of my experiences, projects, and artwork in one place!
+Welcome to my portfolio, this is a react web application that was made to showcase all of my experiences, projects, and artwork in one place!
 
 ## :computer: Demo Links
 - Website: 
