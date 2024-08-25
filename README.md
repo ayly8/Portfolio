@@ -1,4 +1,4 @@
-# :strawberry: Portfolio Website
+# :strawberry: Portfolio Website :strawberry: 
 This is a react web application that was made to showcase all of my experiences, projects, and artwork in one place!
 
 ## :computer: Demo Links
@@ -12,23 +12,27 @@ This is a react web application that was made to showcase all of my experiences,
 - Visual Studio Code
 - GitHub
 - Squarespace
-- Flaticon
 - Figma
+- Flaticon
 
 ## :camera: Website Features
 1. Custom domain name (Squarespace) and tab icon (Flaticon)
-2. Three pages: Home, Projects, Fun
-### :house: Home
-- About Me: introduces who I am and links to resume and socials (email, Linkedin, Github)
-- Featured Projects: 3 projects are briefly displayed as an image and the images are linked to direct user to the specific project for more details
-- Work Experience: has detailed explanations of my time in a Research Experience for Undergrads (REU) and a teacher
-- Extracirricular: has detailed explanations of my time as an executive board member in Cal Poly Pomona sheCodes club
-- See More: "See More" section is at the bottom of each page, as an alternative way to navigate to the other pages of the website
-- Footer: the footer section is at the bottom of each page, with 4 icon images that link to resume and socials (email, Linkedin, Github)
-  
-### :books: Projects
-- Projects: showcases some of the projects I have worked on, each one has the title of the project, type of project, image preview, button that links to the project's Github, button that displays the full project description, and some have a demo/presentation linked
-- Hackathons: showcases the hackathons I have participated in with my friends
 
-### :paintbrush: Fun
-- Anime Fanart: I enjoy watching anime and drawing in my freetime, so this is showcasing some of my anime fanart that I have done
+   <img src="screenshots/ayly_tab.png" alt="screenshot of tab icon, name, and custom domain name" width="500">
+2. "See More" Section: at the bottom of each page, as an alternative way to navigate to the other pages of the website
+3. Three pages: Home, Projects, Fun
+   
+   ### Home Page
+      - About Me: introduces who I am and links to resume and socials (email, Linkedin, Github)
+        <img src="screenshots/ayly_about_me.png" alt="screenshot of about me section" width="600"/>
+      - Featured Projects: 3 projects are displayed as a linked image, which directs user to the specific project for more details
+      - Work Experience and Extracirricular: has detailed explanations of my accomplishments
+        <img src="screenshots/ayly_featured_and_work_exp.png" alt="screenshot of featured projecst and work exp section" width="600"/>
+        <img src="screenshots/ayly_extracirricular.png" alt="screenshot of extracirricular section" width="600"/>
+  
+   ### Projects Page
+      - Projects and Hackathons: showcases some of the projects I have worked on
+        <img src="screenshots/ayly_projects.png" alt="screenshot of projects section" width="600"/>
+
+   ### Fun Page
+      - __Anime Fanart__: showcases some of my anime fanart that I have done
