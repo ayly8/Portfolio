@@ -1,9 +1,10 @@
 # :strawberry: Portfolio Website :strawberry: 
 Welcome to my portfolio, this is a react web application that was made to showcase all of my experiences, projects, and artwork in one place!
 
-## :computer: Demo Links
-- Website: 
-- Youtube Video:
+## :computer: Links
+- ### [Website](https://www.allisonyly.com/)
+- ### [Demo Video](https://www.youtube.com/watch?v=rIeoBzPjRLY)
+- ### [Figma](https://www.figma.com/design/X6lyEwL2FQsYY5sssEnDbw/Ally-Website?node-id=0-1&t=9Bw4IdA9UoJKmuYu-1)
 
 ## :gear: Tools/Resources
 - React JS
@@ -35,4 +36,4 @@ Welcome to my portfolio, this is a react web application that was made to showca
         <img src="screenshots/ayly_projects.png" alt="screenshot of projects section" width="600"/>
 
    ### Fun Page
-      - __Anime Fanart__: showcases some of my anime fanart that I have done
+      - Anime Fanart: showcases some of my anime fanart that I have done
