@@ -177,7 +177,7 @@ function Projects() {
                   img={cleandorm}
                   imgDesc="clean dorm canvas page"
                   link="https://github.com/Melvingitb/Clean-Dorm"
-                  linkName="YouTube"
+                  linkName="GitHub"
                   fullDesc="Collaborated in a team of 3 to create a website within 24 hours. Website allows users to login/register for an account, 
                   create a blueprint of their living space, and add tasks for each room. Helped develop the frontend of our website and the canvas page, 
                   utilizing both React and Konva."
