@@ -1,8 +1,8 @@
 .desc {
-   border: 2px solid #A18276;
+   border: 2px solid #dd127f;
    border-radius: 10px;
-   box-shadow: 5px 5px 5px rgba(251,172,190, 0.5);
-   background-color: rgba(241,214,184, 0.7);
+   box-shadow: 5px 5px 5px #FBACBE;
+   background-color: #FFFFFF;
    padding: 20px;
    margin: 20px;
    text-align: center;
@@ -19,20 +19,20 @@
 }
 
 .desc-title {
-   background-color: #A18276;
-   color: white;
+   background-color: #FFFFFF;
+   color: #dd127f;
    padding: 10px;
    border-radius: 5px;
 }
 
 .desc-duration {
-   color: #A18276;
+   color: #dd127f;
    margin: 10px;
 }
 
 .desc-para {
-   background-color: rgb(255,255,255, 0.8);
-   color: #A18276;
+   background-color: #FFFFFF;
+   color: #000000;
    padding: 10px;
    border-radius: 5px;
    text-align: left;

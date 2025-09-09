@@ -4,9 +4,9 @@ import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
 import '../css/home.css'
 import ally from '../assets/Allison_Ly.png'
-import proj1 from "../assets/RestaurantDeliverySystem.png"
-import proj2 from "../assets/Nomnommap.png"
-import proj3 from "../assets/PlanningPal.png"
+import proj1 from "../assets/project_ss/cowcomic_ss.png"
+import proj2 from "../assets/project_ss/restaurant_ss.png"
+import proj3 from "../assets/project_ss/nomnommap_ss.png"
 
 // creates the home page
 function Home() {
@@ -19,9 +19,9 @@ function Home() {
                <div id="pic-and-desc">
                   <img id="about-me-pic" src={ally} alt="picture of Allison Ly" loading="lazy"/>
                   <p id="about-me-para">
-                  Hi, my name is Allison Ly and welcome to my portfolio website! I am a Computer Science major at Cal Poly Pomona and will be 
-                  graduating in December 2024. I am interested in a career within the Project Management and Software Engineering fields. I have 
-                  maintained a GPA of 3.67 and made the Dean’s Honors List every semester. For almost three years I have been an active member of 
+                  Hi, my name is Allison Ly and welcome to my portfolio website! I am a Computer Science major who graduated from Cal Poly Pomona
+                  in December 2024. I am interested in a career within the Project Management, Technical Consulting, and Software Engineering fields. 
+                  I have maintained a GPA of 3.67 and made the Dean’s Honors List every semester. For almost three years I have been an active member of 
                   Cal Poly Pomona’s sheCodes club, which supports underrepresented students in STEM. I also participated in the Summer 2023 Unmanned 
                   Aerial Vehicle Research Experience for Undergrads at Cal Poly Pomona, where I gained interdisciplinary experience.
                   </p>
@@ -43,18 +43,30 @@ function Home() {
             </div>
             <p className="section-title">.｡* Featured Projects *｡.</p>
             <div id="featured-work">
-               <Link to="/projects#proj-section-1">
-                  <img src={proj1} alt="Restaurant Delivery System Project Preview" loading="lazy"></img>
-               </Link>
-               <Link to="/projects#proj-section-2">
-                  <img src={proj2} alt="Nomnommap Project Preview" loading="lazy"></img>
-               </Link>
-               <Link to="/projects#proj-section-2">
-                  <img src={proj3} alt="Planning Pal Project Preview" loading="lazy"></img>
-               </Link>
+               <div className="works">
+                  <img id="proj1" src={proj1} alt="cowcomic book survey page" loading="lazy"/>
+                  <h3>CowComic</h3>
+                  <h4>React Web Application</h4>
+               </div>
+               <div className="works">
+                  <img id="proj2" src={proj2} alt="restaurant info page" loading="lazy"/>
+                  <h3>Restaurant Delivery System</h3>
+                  <h4>Java Desktop Application</h4>
+               </div>
+               <div className="works">
+                  <img id="proj3" src={proj3} alt="nomnommap app screenshots" loading="lazy"/>
+                  <h3>NomNomMap</h3>
+                  <h4>Android Mobile Application</h4>
+               </div>
             </div>
             <div id="work-exp">
                <p className="section-title">･✧･ Work Experience ･✧･</p>
+               <Description
+                  title="Dreams for Schools"
+                  duration="March - August 2025"
+                  desc="Worked as a K-5th grade STEAM instructor at Dreams for Schools, located in Orange County CA, for half a year. Co-instructed 20 students 
+                  during Spring-Summer to introduce STEAM concepts and foster a hands-on learning environment. Taught block coding to students in various learning stages 
+                  using Sphero Robots and Sphero EDU software. Introduced engineering concepts to students using project kits and art supplies." />
                <Description 
                   title="Research Experience for Undergrads"
                   duration="June - August 2023"

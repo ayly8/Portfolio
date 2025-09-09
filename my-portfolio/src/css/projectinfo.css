@@ -9,10 +9,10 @@
 }
 
 .proj {
-   border: 2px solid #A18276;
+   border: 2px solid #dd127f;
    border-radius: 10px;
-   box-shadow: 5px 5px 5px rgba(251,172,190, 0.5);
-   background-color: rgba(241,214,184, 0.7);
+   box-shadow: 5px 5px 5px #FBACBE;
+   background-color: #FFFFFF;
    padding: 20px;
    margin: 20px;
    text-align: center;
@@ -26,13 +26,13 @@
 }
 
 .proj-title, .brief-desc {
-   color: #A18276;
+   color: #dd127f;
    font-family: Verdana;
    overflow-wrap: break-word;
 }
 
 .proj-title {
-   border-bottom: 2px solid #A18276;
+   border-bottom: 2px solid #dd127f;
    width: 70%;
    padding: 10px;
 }
@@ -48,7 +48,7 @@
 }
 
 .demo-link {
-   color: #A18276;
+   color: #dd127f;
    font-family: Verdana;
 }
 
@@ -58,9 +58,9 @@
 }
 
 .link-btn, .desc-btn {
-   background-color: #A18276;
-   color: white;
-   border: 1px solid #A18276;
+   background-color: #FBACBE;
+   color: #dd127f;
+   border: 1px solid #FBACBE;
    font-family: Verdana;
    font-size: 16;
    text-align: center;
@@ -71,9 +71,9 @@
 }
 
 .link-btn:hover, .desc-btn:hover {
-   background-color: rgb(255,255,255, 0.8);
-   color: #A18276;
-   border: 1px solid #A18276;
+   background-color: #FFFFFF;
+   color: #dd127f;
+   border: 1px solid #dd127f;
 }
 
 .link-btn::after, .desc-btn::after {
@@ -81,7 +81,7 @@
    width: 0;
    height: 2px;
    display: block;
-   background: #A18276;
+   background: #dd127f;
    transition: width 0.3s ease, background-color 0.3s ease;
  }
  
@@ -90,8 +90,8 @@
  }
 
 .proj-full-desc {
-   background-color: rgb(255,255,255, 0.8);
-   color: #A18276;
+   background-color: #FFFFFF;
+   color: #000000;
    padding: 10px;
    border-radius: 5px;
    text-align: left;

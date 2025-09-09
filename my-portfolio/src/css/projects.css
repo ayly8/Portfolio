@@ -11,10 +11,10 @@
    font-family: Verdana;
    font-size: 32px;
    margin-bottom: 0;
-   color: #A18276;
+   color: #dd127f;
 }
 
-#proj-section-1, #proj-section-2, #proj-section-3, #hack-section-1 {
+#proj-section-1, #proj-section-2, #proj-section-3, #proj-section-4, #hack-section-1 {
    display: flex;
    flex-wrap: wrap;
    gap: 32px;

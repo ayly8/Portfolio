@@ -14,7 +14,7 @@ function Desc(props) {
 
    return (
       <div className="desc">
-         <h3 className="desc-title">{props.title}</h3>
+         <h2 className="desc-title">{props.title}</h2>
          <h4 className="desc-duration">{props.duration}</h4>
          <div className="desc-para">
             <ul>

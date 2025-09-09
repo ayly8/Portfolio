@@ -11,14 +11,14 @@
    font-family: Verdana;
    font-size: 32px;
    margin-bottom: 0;
-   color: #A18276;
+   color: #dd127f;
 }
 
 #about-me {
-   border: 2px solid #A18276;
+   border: 2px solid #dd127f;
    border-radius: 10px;
-   box-shadow: 5px 5px 5px rgba(251,172,190, 0.5);
-   background-color: rgba(241,214,184, 0.7);
+   box-shadow: 5px 5px 5px #FBACBE;
+   background-color: #FFFFFF;
    padding: 20px;
    margin: 20px;
    text-align: center;
@@ -38,8 +38,8 @@
 }
 
 #about-me-para {
-   background-color: rgb(255,255,255, 0.8);
-   color: #A18276;
+   background-color: #FFFFFF;
+   color: #000000;
    padding: 10px;
    border-radius: 5px;
    font-family: Verdana;
@@ -63,9 +63,9 @@
 }
 
 .connect-options {
-   background-color: #A18276;
-   color: white;
-   border: 1px solid #A18276;
+   background-color: #FBACBE;
+   color: #dd127f;
+   border: 1px solid #FBACBE;
    font-family: Verdana;
    font-size: 24;
    text-align: center;
@@ -77,29 +77,32 @@
 }
 
 .connect-options:hover {
-   background-color: rgb(255,255,255, 0.8);
-   color: #A18276;
-   border: 1px solid #A18276;
+   background-color: #FFFFFF;
+   color: #dd127f;
+   border: 1px solid #dd127f;
+   cursor: pointer;
 }
 
 #featured-work {
+   padding: 20px;
+   margin: 20px;
    width: 100%;
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
+   gap: 10px;
+}
+
+.works{
+   border: 2px solid #dd127f;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px #FBACBE;
+   background-color: #FFFFFF;
+   color: #dd127f;
 }
 
 #featured-work img {
    width: 400px;
-   height: auto;
-   margin: 5px;
-   border: 2px solid #A18276;
-   border-radius: 10px;
-   box-shadow: 5px 5px 5px rgba(251,172,190, 0.5);
-   background-color: rgba(241,214,184, 0.7);
-}
-
-#featured-work img:hover {
-   cursor: pointer;
-   filter: saturate(0);
+   height: 250px;;
+   padding: 16px;
 }
