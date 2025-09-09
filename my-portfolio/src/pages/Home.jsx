@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
 import '../css/home.css'
@@ -46,17 +45,17 @@ function Home() {
                <div className="works">
                   <img id="proj1" src={proj1} alt="cowcomic book survey page" loading="lazy"/>
                   <h3>CowComic</h3>
-                  <h4>React Web Application</h4>
+                  <p>React Web Application</p>
                </div>
                <div className="works">
                   <img id="proj2" src={proj2} alt="restaurant info page" loading="lazy"/>
                   <h3>Restaurant Delivery System</h3>
-                  <h4>Java Desktop Application</h4>
+                  <p>Java Desktop Application</p>
                </div>
                <div className="works">
                   <img id="proj3" src={proj3} alt="nomnommap app screenshots" loading="lazy"/>
                   <h3>NomNomMap</h3>
-                  <h4>Android Mobile Application</h4>
+                  <p>Android Mobile Application</p>
                </div>
             </div>
             <div id="work-exp">

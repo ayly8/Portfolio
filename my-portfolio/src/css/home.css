@@ -94,11 +94,13 @@
 }
 
 .works{
+   background-color: #FFFFFF;
+   color: #dd127f;
+   font-family: Verdana;
+   font-style: normal;
    border: 2px solid #dd127f;
    border-radius: 10px;
    box-shadow: 5px 5px 5px #FBACBE;
-   background-color: #FFFFFF;
-   color: #dd127f;
 }
 
 #featured-work img {
