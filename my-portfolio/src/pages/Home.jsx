@@ -3,6 +3,7 @@ import Description from "../components/Desc"
 import SeeMore from "../components/SeeMore"
 import '../css/home.css'
 import ally from '../assets/Allison_Ly.png'
+import ally_grad from '../assets/AYLY_grad_pic.jpg'
 import proj1 from "../assets/project_ss/cowcomic_ss.png"
 import proj2 from "../assets/project_ss/restaurant_ss.png"
 import proj3 from "../assets/project_ss/nomnommap_ss.png"
@@ -16,7 +17,7 @@ function Home() {
             <p className="section-title">ꔫ: About Me :ꔫ</p>
             <div id="about-me">
                <div id="pic-and-desc">
-                  <img id="about-me-pic" src={ally} alt="picture of Allison Ly" loading="lazy"/>
+                  <img id="about-me-pic" src={ally_grad} alt="picture of Allison Ly" loading="lazy"/>
                   <p id="about-me-para">
                   Hi, my name is Allison Ly and welcome to my portfolio website! I am a Computer Science major who graduated from Cal Poly Pomona
                   in December 2024. I am interested in a career within the Project Management, Technical Consulting, and Software Engineering fields. 
