@@ -13,7 +13,7 @@ function Home() {
 
    return (
       <>
-         <div id="everything-home">
+         {/* <div id="everything-home">
             <p className="section-title">ꔫ: About Me :ꔫ</p>
             <div id="about-me">
                <div id="pic-and-desc">
@@ -105,7 +105,7 @@ function Home() {
                second_location="/fun"
                second_option_name="Fun"/>
             <br></br>
-         </div>
+         </div> */}
       </> 
    );
 }

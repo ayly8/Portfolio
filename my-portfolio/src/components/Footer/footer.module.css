@@ -1,0 +1,34 @@
+.foot {
+  margin: 0;
+  background-color: #FFC8DD;
+  border-top: 3px solid #dd127f;
+  color: #000000;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 10px;
+}
+
+.socials_img {
+   filter:
+   invert(30%)
+   sepia(95%)
+   saturate(2000%)
+   hue-rotate(300deg)
+   brightness(90%)
+   contrast(85%);
+}
+
+.socials_img:hover {
+  cursor: pointer;
+}
