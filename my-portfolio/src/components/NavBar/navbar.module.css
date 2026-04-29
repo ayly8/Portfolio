@@ -10,4 +10,6 @@
    background-color: #FAC8DD;
    border-bottom: 3px solid #dd127f;
    padding: 16px;
+   display: flex;
+   justify-content: center;
 }

@@ -1,0 +1,43 @@
+.abtme_section {
+   border: 2px solid #dd127f;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px #FBACBE;
+   background-color: #FFFFFF;
+   padding: 15px;
+   margin: 20px;
+   position: static;
+}
+
+/* Desktop and larger screens */
+@media (min-width: 768px) {
+   .abtme_section {
+      border: 2px solid #dd127f;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px #FBACBE;
+      background-color: #FFFFFF;
+      padding: 15px;
+      margin: 20px;
+      position: fixed;
+      top: 55px;
+      width: 300px;
+   }
+}
+
+.pic {
+   width: 128px;
+   height: 128px;
+   border-radius: 50%;
+}
+
+.socials {
+   display: flex;
+   gap: 20px;
+}
+
+.socials_img {
+   filter: invert(30%) sepia(95%) saturate(2000%) hue-rotate(300deg) brightness(90%) contrast(85%);
+}
+
+.socials_img:hover {
+   cursor: pointer;
+}
