@@ -13,6 +13,15 @@ function AboutMe() {
          <h2>Allison Y. Ly</h2>
          <h3>Digital Engineering Tech Consultant at EY</h3>
          <p>Seattle, WA</p>
+         <hr></hr>
+         <h2>Cal Poly Pomona</h2>
+         <h3>Computer Science | December 2024</h3>
+         <hr></hr>
+         <p>
+            Hi, my name is Allison and welcome to my portfolio website! I have a background in teaching STEAM concepts, working in
+            collaborative settings, and I am passionate about applying these skills in a professional tech environment. I enjoy spending 
+            time with loved ones, doing art, and playing games in my free time!
+         </p>
          <div className={styles.socials}>
             <a href="https://docs.google.com/document/d/1sOQ6vM8wcC0NNTz2ZSJfEKxyDb9MASPyLu3Si5iHMpg/edit?usp=sharing" target="_blank">
                <img className={styles.socials_img} src={user} alt="user icon for resume" width="30px" height="30px" loading="lazy" />
@@ -30,13 +39,6 @@ function AboutMe() {
                <img className={styles.socials_img} src={insta} alt="instagram icon" width="30px" height="30px" loading="lazy" />
             </a>
          </div>
-         <hr></hr>
-         <p>
-            Hi, my name is Allison and welcome to my portfolio website! I am a Computer Science major who graduated from Cal Poly Pomona
-            in December 2024 and currently work at EY as a tech consultant. I have a background in teaching STEAM concepts, working in
-            collaborative settings, and I am passionate about applying these skills in a professional tech environment. I enjoy spending 
-            time with loved ones, doing art, and playing games in my free time!
-         </p>
       </div>
    );
 }

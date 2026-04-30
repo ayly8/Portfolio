@@ -19,6 +19,8 @@
       position: fixed;
       top: 55px;
       width: 300px;
+      height: calc(87vh - 55px);
+      overflow-y: auto;
    }
 }
 
