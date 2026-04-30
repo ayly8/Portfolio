@@ -1,0 +1,27 @@
+.projects_section {
+   overflow-x: hidden;
+}
+
+.projects_title {
+   color: #dd127f;
+   padding: 15px;
+   margin: auto;
+}
+
+.projects {
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: 0; 
+}
+
+@media (min-width: 768px) {
+   .projects_title {
+      padding-bottom: 0px;
+      margin-left: 355px;
+   }
+   .projects {
+      grid-template-columns: repeat(2, 1fr);
+      width: calc(100% - 355px);
+      margin-left: 355px;
+   }
+}

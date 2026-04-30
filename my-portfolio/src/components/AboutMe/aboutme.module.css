@@ -8,7 +8,6 @@
    position: static;
 }
 
-/* Desktop and larger screens */
 @media (min-width: 768px) {
    .abtme_section {
       border: 2px solid #dd127f;
