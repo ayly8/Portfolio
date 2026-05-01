@@ -1,6 +1,6 @@
-import ExperiencesInfo from "../../components/ExperiencesInfo/ExperiencesInfo.jsx"
-import styles from "./experiences.module.css"
+import ExperiencesInfo from "./ExperiencesInfo.jsx"
 
+// array of all experiences
 const experiencesData = [
    {
       name: "Dreams for Schools",
@@ -22,13 +22,14 @@ const experiencesData = [
    },
 ];
 
+// this component maps over all experience data and displays each one
 function Experiences() {
    const experiences = experiencesData;
 
    return (
-      <div className={styles.experience_section}>
-         <h2 className={styles.experience_title}>˚୨୧ Experiences ୨୧˚</h2>
-         <div className={styles.experiences}>
+      <div className="overflow-x-hidden">
+         <h2 className="text-[#dd127f] p-[15px] mx-auto md:pb-0 md:ml-[355px]">˚୨୧ Experiences ୨୧˚</h2>
+         <div className="m-0 md:w-[calc(100%-355px)] md:ml-[355px]">
             {experiences.map((experience) => (
                <ExperiencesInfo experiencesObj={experience} key={experience.name} />
             ))}

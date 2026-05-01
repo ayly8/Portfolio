@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
-import styles from "./experiencesinfo.module.css"
 
+// this component creates handles the layout and details for an individual experience
 function ExperiencesInfo({ experiencesObj }) {
    /**
     * 1. splits description string into an sentences
@@ -12,11 +12,12 @@ function ExperiencesInfo({ experiencesObj }) {
    ));
 
    return (
-      <div className={styles.experiences_section}>
-         <h2 className={styles.experience_name}>{experiencesObj.name}</h2>
-         <h4 className={styles.experience_year}>{experiencesObj.year}</h4>
-         <div className={styles.experience_desc}>
-            <ul>
+      <div className="border-2 border-[#dd127f] rounded-[10px] shadow-[5px_5px_5px_#FBACBE]
+         bg-white p-5 m-5 flex flex-col justify-center items-center text-center">
+         <h2>{experiencesObj.name}</h2>
+         <p>{experiencesObj.year}</p>
+         <div className="bg-white text-black p-3 text-left w-full">
+            <ul className="list-disc pl-6 text-sm">
                {bulletPoints}
             </ul>
          </div>

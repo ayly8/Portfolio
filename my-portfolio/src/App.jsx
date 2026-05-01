@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar"
-import AboutMe from "./components/AboutMe/AboutMe"
-import Projects from "./components/Projects/Projects"
-import Experiences from "./components/Experiences/Experiences"
+import AboutMe from "./components/AboutMe"
+import Projects from "./components/Projects"
+import Experiences from "./components/Experiences"
 
 function App() {
   return (
@@ -15,9 +15,3 @@ function App() {
 }
 
 export default App
-
-// body {
-//  background-color: #fcf1f6;
-//  margin: 0;
-//  font-family: monospace;
-//}

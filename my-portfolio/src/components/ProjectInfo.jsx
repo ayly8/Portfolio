@@ -1,7 +1,7 @@
 import { useState } from "react"
 import PropTypes from "prop-types"
-import styles from "./projectinfo.module.css"
 
+// this component creates handles the layout and details for an individual project 
 function ProjectInfo({ projectsObj }) {
     // used to track description visibility state 
    const [descVisible, setDescVisible] = useState(false);
@@ -26,20 +26,27 @@ function ProjectInfo({ projectsObj }) {
    ));
 
    return (
-      <div className={styles.projects_grid}>
+      <div className="border-2 border-[#dd127f] rounded-[10px] shadow-[5px_5px_5px_#FBACBE]bg-white 
+         p-4 m-4 flex flex-col justify-center items-center gap-3 flex-1">
          <h2>{projectsObj.name}</h2>
          <p>{projectsObj.briefDesc}</p>
-         <img className={styles.proj_img} src={projectsObj.photoName} alt={projectsObj.photoDesc} />
-         <div className={styles.btn_section}>
-            <button className={styles.btn} onClick={openInNewTab(projectsObj.githubLink)}>GitHub</button>
-            <button className={styles.btn} onClick={toggleDescription}>Read More</button>
+         <img className="w-[350px] h-auto" src={projectsObj.photoName} alt={projectsObj.photoDesc} />
+         <div className="flex gap-3">
+            <button className="bg-[#FBACBE] text-[#dd127f] border border-[#FBACBE] rounded-md font-mono text-sm
+               w-[100px] p-2 hover:bg-white hover:text-[#dd127f] hover:border-[#dd127f] cursor-pointer" 
+               onClick={openInNewTab(projectsObj.githubLink)}>GitHub</button>
+            <button className="bg-[#FBACBE] text-[#dd127f] border border-[#FBACBE] rounded-md font-mono text-sm
+               w-[100px] p-2 hover:bg-white hover:text-[#dd127f] hover:border-[#dd127f] cursor-pointer" 
+               onClick={toggleDescription}>Read More</button>
          </div>
          {/* this creates the toggle feature for seeing the full project description */}
-         <div className={`${styles.proj_full_desc} ${descVisible ? styles.visible : styles.hidden}`}>
-            <ul>
-               {bulletPoints}
-            </ul>
-         </div>
+         {descVisible && (
+            <div className="bg-white text-black p-3 text-left w-full">
+               <ul className="list-disc pl-6 text-sm">
+                  {bulletPoints}
+               </ul>
+            </div>
+         )}
       </div>
    );
 }
