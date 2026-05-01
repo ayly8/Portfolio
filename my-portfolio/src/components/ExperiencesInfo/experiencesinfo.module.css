@@ -1,4 +1,8 @@
-.desc {
+.html {
+   overflow-y: hidden;
+}
+
+.experiences_section {
    border: 2px solid #dd127f;
    border-radius: 10px;
    box-shadow: 5px 5px 5px #FBACBE;
@@ -6,7 +10,6 @@
    padding: 20px;
    margin: 20px;
    text-align: center;
-   width: 70vw;
    display: inline-block;
    display: flex;
    flex-direction: column;
@@ -14,23 +17,16 @@
    align-items: center;
 }
 
-.desc-title, .desc-duration, .desc-para {
-   font-family: Verdana;
-}
-
-.desc-title {
-   background-color: #FFFFFF;
-   color: #dd127f;
+.experience_name {
    padding: 10px;
    border-radius: 5px;
 }
 
-.desc-duration {
-   color: #dd127f;
+.experience_year {
    margin: 10px;
 }
 
-.desc-para {
+.experience_desc {
    background-color: #FFFFFF;
    color: #000000;
    padding: 10px;
@@ -38,6 +34,6 @@
    text-align: left;
 }
 
-.desc-para li {
+.experience_desc li {
    margin-bottom: 5px; 
 }
