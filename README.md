@@ -1,15 +1,17 @@
 # :strawberry: Portfolio Website :strawberry: 
-Welcome to my portfolio, this is a react web application that was made to showcase all of my experiences, projects, and artwork in one place!
+Welcome to my portfolio, this is a react web application that was made to showcase all of my projects and experiences in one place!
 
 ## :computer: Links
 - ### [Website](https://www.allisonyly.com/)
-- ### [Demo Video (2024)](https://www.youtube.com/watch?v=rIeoBzPjRLY)
+- ### [2026 Demo Video](https://youtu.be/rPJ0ObnqA6Y)
+- ### [2024 Demo Video](https://www.youtube.com/watch?v=rIeoBzPjRLY)
 - ### [Figma](https://www.figma.com/design/X6lyEwL2FQsYY5sssEnDbw/Ally-Website?node-id=0-1&t=9Bw4IdA9UoJKmuYu-1)
 
 ## :gear: Tools/Resources
 - React JS
 - HTML/CSS
 - Javascript
+- Tailwind CSS
 - Visual Studio Code
 - GitHub
 - Squarespace
@@ -19,21 +21,9 @@ Welcome to my portfolio, this is a react web application that was made to showca
 ## :camera: Website Features
 1. Custom domain name (Squarespace) and tab icon (Flaticon)
 
-   <img src="screenshots/ayly_tab.png" alt="screenshot of tab icon, name, and custom domain name" width="500">
-2. "See More" Section: at the bottom of each page, as an alternative way to navigate to the other pages of the website
-3. Three pages: Home, Projects, Fun
-   
-   ### Home Page
-      - About Me: introduces who I am and links to resume and socials (email, Linkedin, Github)
-        <img src="screenshots/ayly_about_me_2025.png" alt="screenshot of about me section" width="600"/>
-      - Featured Projects: 3 projects are displayed with a brief description
-      - Work Experience and Extracirricular: has detailed explanations of my accomplishments
-        <img src="screenshots/ayly_work_2025.png" alt="screenshot of featured projecst and work exp section" width="600"/>
-        <img src="screenshots/ayly_extracirricular_2025.png" alt="screenshot of extracirricular section" width="600"/>
-  
-   ### Projects Page
-      - Projects and Hackathons: showcases some of the projects I have worked on
-        <img src="screenshots/ayly_projects_2025.png" alt="screenshot of projects section" width="600"/>
+   <img src="2025_screenshots/ayly_tab.png" alt="screenshot of tab icon, name, and custom domain name" width="500">
+2. One page website, About Me section stays showing on the left-side, scroll to see Projects and Experiences
 
-   ### Fun Page
-      - Anime Fanart: showcases some of my anime fanart that I have done
+   <img src="ayly_home_projs.png" alt="screenshot of home page with projects on the right" width="500">
+
+   <img src="ayly_home_exps.png" alt="screenshot of home page with experiences on the right" width="500">
